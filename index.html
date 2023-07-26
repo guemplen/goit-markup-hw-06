@@ -413,6 +413,38 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <p class="form-description"></p>
+          <label class="form-review">
+            Name<sup>*</sup>
+            <input class="form-input" type="text" name="user_name" required />
+          </label>
+          <label class="form-review">
+            Phone<sup>*</sup>
+            <input class="form-input" type="tel" name="user_phone" required />
+          </label>
+          <label class="form-review">
+            Email<sup>*</sup>
+            <input class="form-input" type="email" name="user_email" required />
+          </label>
+          <label class="form-review">
+            Comment
+            <textaria class="form-message" name="user_msg"></textaria>
+          </label>
+          <label class="form-review">
+            <input
+              class="form-chekbox-policy"
+              type="checkbox"
+              name="user_policy"
+              required
+            />
+            <p>
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </p>
+          </label>
+          <button type="submit" class="form-btn-send"></button>
+        </form>
       </div>
     </div>
 
