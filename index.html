@@ -413,37 +413,91 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+
+        <p class="modal-form-text">
+          Leave your contacts and we will call you back
+        </p>
+
         <form class="modal-form">
-          <p class="form-description"></p>
-          <label class="form-review">
-            Name<sup>*</sup>
-            <input class="form-input" type="text" name="user_name" required />
-          </label>
-          <label class="form-review">
-            Phone<sup>*</sup>
-            <input class="form-input" type="tel" name="user_phone" required />
-          </label>
-          <label class="form-review">
-            Email<sup>*</sup>
-            <input class="form-input" type="email" name="user_email" required />
-          </label>
-          <label class="form-review">
-            Comment
-            <textaria class="form-message" name="user_msg"></textaria>
-          </label>
-          <label class="form-review">
+          <div class="modal-form-wrapper">
+            <label class="modal-form-field" for="user-name">Name</label>
+            <div class="modal-form-input-wrapper">
+              <input
+                class="modal-form-input"
+                id="user-name"
+                type="text"
+                name="user-name"
+                required
+              />
+              <svg class="modal-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-wrapper">
+            <label class="modal-form-field" for="user-phone">Phone</label>
+            <div class="modal-form-input-wrapper">
+              <input
+                class="modal-form-input"
+                id="user-phone"
+                type="tel"
+                name="phone"
+                required
+              />
+              <svg class="modal-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-wrapper">
+            <label class="modal-form-field" for="user-email">Email</label>
+            <div class="modal-form-input-wrapper">
+              <input
+                class="modal-form-input"
+                id="user-email"
+                type="email"
+                name="email"
+                required
+              />
+              <svg class="modal-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-massage-wrapper">
+            <label class="modal-form-field" for="user-massage">Comment</label>
+            <textarea
+              class="modal-form-massage"
+              id="user-massage"
+              name="user-massage"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="modal-form-checkbox-wrapper">
             <input
-              class="form-chekbox-policy"
+              class="visually-hidden checkbox"
+              id="user-privacy"
               type="checkbox"
-              name="user_policy"
+              value="true"
+              name="user-privacy"
               required
             />
-            <p>
-              I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
-            </p>
-          </label>
-          <button type="submit" class="form-btn-send"></button>
+            <label class="modal-form-checkbox" for="user-privacy">
+              <span class="modal-form-checkbox-icon">
+                <svg width="10" height="8" aria-label="Accept">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the&nbsp;
+              <a href="" class="modal-form-policy-link">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="modal-form-btn">Send</button>
         </form>
       </div>
     </div>
