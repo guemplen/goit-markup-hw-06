@@ -403,7 +403,28 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe-block">
+          <p class="subscribe-form-text">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label class="subscribe-form-label">
+              <input
+                class="subscribe-form-input"
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="subscribe-button">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
+    </footer>
+    </div>
     </footer>
 
     <div class="modal is-hidden" data-modal>
@@ -468,11 +489,11 @@
           </div>
 
           <div class="modal-form-massage-wrapper">
-            <label class="modal-form-field" for="user-massage">Comment</label>
+            <label class="modal-form-field" for="user-comment">Comment</label>
             <textarea
               class="modal-form-massage"
-              id="user-massage"
-              name="user-massage"
+              id="user-comment"
+              name="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
